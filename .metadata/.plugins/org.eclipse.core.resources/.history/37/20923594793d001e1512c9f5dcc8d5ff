@@ -1,0 +1,19 @@
+package edu.kh.jdbc.main.model.dao;
+
+public class MainDAO {
+	
+	//필드
+	// JDBC 객체 참조 변수
+	private Statement stmt;//SQL 수행, 결과 반환
+	private PreparedStatement pstmt; // placholder를 포함한 SQL 세팅/수행
+	private ResultSet rs; // SELECT 수행 결과 저장
+	
+	
+	//기본생성자
+	
+	public Member login(Connection conn, String memberId, String memberPw) {
+		
+		return null;
+	}
+
+}

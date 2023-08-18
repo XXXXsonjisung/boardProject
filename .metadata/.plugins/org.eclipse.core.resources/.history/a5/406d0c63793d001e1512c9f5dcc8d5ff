@@ -1,0 +1,84 @@
+package edu.kh.jdbc.main.view;
+
+import java.util.Scanner;
+
+import edu.kh.jdbc.common.Session;
+
+public class MainView {
+	
+	private Scanner sc = new Scanner(System.in);
+	
+	
+	
+	/**메인 메뉴 출력
+	 * 
+	 */
+	public void mainMenu() {
+		
+		int input = 0;
+		
+		do {
+			
+			try {
+				
+				if(Session.loginMember == null) { //로그인 x
+					
+					System.out.println("\n=======회원제 게시판 프로그램=========\n");
+					System.out.println("1.로그인");
+					System.out.println("2.회원가입");
+					System.out.println("3.프로그램 종료");
+					
+					System.out.print("\n 메뉴선택 : ");
+					input = sc.nextInt();
+					sc.nextLine(); //입력버퍼 개행문자 제거
+					
+					switch(input) {
+//					case 1: login(); break;
+//					case 2: signUp(); break;
+					case 0: System.out.println("\n=====프로그램 종료====\n");
+					default : System.out.println("\n=====메뉴번호만 입력해 주세요=====\n");
+					
+					
+					}
+					
+					
+					
+				} else { //로그인 o
+					
+					System.out.println("\n=======로그인 메뉴=========\n");
+					System.out.println("1.회원기능");
+					System.out.println("2.게시판 기능");
+					System.out.println("3.로그아웃");
+					System.out.println("0.프로그램 종료");
+					
+					System.out.println("\n 메뉴선택 : ");
+					input =sc.nextInt();
+					sc.nextLine();
+					
+					switch(input) {
+					case 1: break;
+					case 2: break;
+					case 3: 
+						System.out.println("\n===로그아웃 되었습니다.===\n");
+						
+						Session.loginMember = null;
+						//참조하고 있던 로그인 회원 객체를 없앰
+						
+						break;
+						
+					case 0: System.out.println("\n=====프로그램 종료====\n"); break;
+					default : System.out.println("\n=====메뉴번호만 입력해 주세요=====\n");
+				}
+				}
+				
+				
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
+			
+			
+		} while(input != 0);
+		
+	}
+}
+

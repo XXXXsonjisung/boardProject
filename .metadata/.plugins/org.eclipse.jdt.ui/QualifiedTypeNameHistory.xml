@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
+    <fullyQualifiedTypeName name="edu.kh.jdbc.main.view.MainView"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="edu.kh.jdbc.member.model.dto.Member"/>
+    <fullyQualifiedTypeName name="edu.kh.jdbc.common.Session"/>
+    <fullyQualifiedTypeName name="edu.kh.jdbc.main.model.service.MainService"/>
+    <fullyQualifiedTypeName name="edu.kh.jdbc.main.model.dao.MainDAO"/>
+    <fullyQualifiedTypeName name="edu.kh.emp.common.JDBCTemplate"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+</qualifiedTypeNameHistroy>

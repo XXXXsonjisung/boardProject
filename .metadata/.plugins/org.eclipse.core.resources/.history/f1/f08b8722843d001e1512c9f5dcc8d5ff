@@ -1,0 +1,8 @@
+package edu.kh.jdbc.main.model.dao;
+
+public class MainDAO {
+
+	//기본생성자
+
+
+}

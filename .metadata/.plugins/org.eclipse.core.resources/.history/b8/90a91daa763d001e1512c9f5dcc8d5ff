@@ -1,0 +1,5 @@
+package edu.kh.jdbc.main.model.run;
+
+public class MainRun {
+
+}
